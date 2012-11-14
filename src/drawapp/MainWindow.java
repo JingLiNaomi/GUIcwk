@@ -11,8 +11,6 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.WritableImage;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.FlowPane;
-import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import javax.imageio.ImageIO;
 
@@ -115,7 +113,6 @@ public class MainWindow extends Stage
 
     void saveImage(String url) {
         WritableImage wImage=new WritableImage(width,height);
-       // Scene imageScene = new Scene(imagePanel);
         scene.snapshot(wImage);
               generateImageFile(wImage,url);
     }
